@@ -19,7 +19,7 @@ export class AddComponent implements OnInit {
   add(name: string,gender: string): void{
   	name = name.trim();
   	if (!name) { return; }
-  	this.studentService.addStudent({ name, gender } as Studnet)
+  	this.studentService.addStudent({ name, gender } as Student)
       .subscribe();
   }
 }
