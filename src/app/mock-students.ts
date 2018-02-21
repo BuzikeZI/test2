@@ -1,4 +1,4 @@
-import { student } from './student';
+import { Student } from './student';
 
 export const STUDENTS: student[] = [
 	{id:1,name: 'Anna',gender: 'girl', math: 98, eng:95},
