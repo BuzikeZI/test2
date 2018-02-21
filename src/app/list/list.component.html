@@ -1,0 +1,18 @@
+<h2>Students List</h2>
+
+<table class="heroes">
+	<thead><tr><th>No.</th><th>Name</th><th>Gender</th><th>Math</th><th>English</th></tr></thead>
+  <tr *ngFor="let student of students">
+    <td>
+      <span class="badge">{{student.id}}</span> 
+     </td>
+      <td>{{student.name}} </td>
+      <td>{{student.gender}} </td>
+      <td>{{student.math}}</td>
+      <td>{{student.eng}}</td>
+      <td><a routerLink="/detail/{{student.id}}">Edit</a></td>
+      <td><button class="pure-button" (click)="delete(student)">X</button></td>
+    
+    
+  </tr>
+</table>

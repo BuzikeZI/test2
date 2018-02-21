@@ -1,0 +1,18 @@
+<h2>Add Students</h2>
+
+<div class="pure-form">
+	<label>Student name:
+	<input #studentName>
+	</label>
+	<br>
+	<label>Student gender:
+	<input #studentGender>
+	</label>
+	<br>
+	<button class="pure-button" (click)="add(studentName.value,studentGender.value); studentName.value='';
+	studentGender.value=''">
+		Add
+	</button>
+
+
+</div>

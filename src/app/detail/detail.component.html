@@ -1,0 +1,20 @@
+<div *ngIf="student">
+  <h2>{{ student.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{student.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="student.name" placeholder="name"/>
+    </label>
+    <label>gender:
+      <input [(ngModel)]="student.gender" placeholder="gender"/>
+    </label>
+    <label>Math:
+      <input [(ngModel)]="student.math" placeholder="Math"/>
+    </label>
+    <label>English:
+      <input [(ngModel)]="student.eng" placeholder="English"/>
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+</div>
